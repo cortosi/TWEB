@@ -1,0 +1,158 @@
+body,
+p,
+div,
+span{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    background-image: url("http://courses.cs.washington.edu/courses/cse190m/11sp/homework/2/background.png");
+    font-size: 8pt;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.top-banner{
+    background-image: url("https://courses.cs.washington.edu/courses/cse190m/11sp/homework/2/bannerbg.png");
+    display: block;
+    text-align: center;   
+    height: 50px;
+}
+
+.header-title{
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.header-title > h1{
+    text-shadow: 3px 5px #999999;
+}
+
+.content-wrapper{
+    width: inherit;
+    text-align: center;
+}
+
+.content{
+    overflow: auto;
+    text-align: initial;
+    margin: 0 auto;
+    width: 800px;
+    border: 4px solid gray;
+    border-radius: 25px;
+}
+
+.rotten{
+    float: left;
+    width: 550px;
+}
+
+.rotten-header{
+    overflow: hidden;
+    height: 83px;
+    background-image: url("http://courses.cs.washington.edu/courses/cse190m/11sp/homework/2/rbg.png");
+}
+
+.rotten-logo{
+    height: inherit;
+    float: left;
+}
+
+.rotten-n{
+    height: inherit;
+    float: left;
+    display: flex;
+    align-items: center;
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+}
+
+.rotten-content{
+    overflow: auto;
+}
+
+.rotten-content-left,
+.rotten-content-right{
+    width: 47%;
+    float: left;
+}
+
+.rotten-content-left{
+    margin: 0 2%;
+}
+
+.rotten-content-left img,
+.rotten-content-right img{
+    margin-right: 5px;
+    float: left;
+}
+
+.rotten-content-left p,
+.rotten-content-right p{
+    margin-top: 10pt;
+    overflow: auto;
+}
+
+.rotten-content-left p:nth-of-type(odd),
+.rotten-content-right p:nth-of-type(odd){
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #E8DC9B;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.rotten-content-left p:nth-of-type(even),
+.rotten-content-right p:nth-of-type(even){
+   margin-bottom: 20pt;
+}
+
+.rotten-content-left p:nth-of-type(even) span,
+.rotten-content-right p:nth-of-type(even) span{
+    font-style: italic;
+}
+
+.overview{
+    background-color: #A2B964;
+    float: right;
+    width: 250px;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+}
+.overview-content{
+    padding: 10pt;
+}
+
+.overview-content > dl > dt{
+    margin-top: 10pt;
+    font-weight: bold;
+}
+
+.overview-content > dl > dt:nth-of-type(1){
+    margin: 0;
+}
+
+.overview-content ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer{
+    text-align: center;
+    background-color: #A2B964;
+    padding: 5px;
+    clear: both;
+}
+
+.validators{
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
