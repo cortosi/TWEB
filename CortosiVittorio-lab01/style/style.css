@@ -1,0 +1,62 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    width: 100vw;
+    /*Si adatta alla viewport e quindi anche a finestre da 1024px*/
+    height: 100vh;
+    background-image: url("../imgs/Background-index.jpg");
+    background-size: cover;
+}
+
+
+/*Si potevano anche usare le media query*/
+
+
+/*per finestre da 1024px..
+@media screen and (max-width: 1024px) {
+    body,
+    html {
+        width: 1024px;
+        height: 768px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+*/
+
+.header {
+    color: white;
+}
+
+.header-space-div {
+    height: 200px;
+}
+
+.header h1,
+h2,
+p,
+a {
+    font-family: 'Ubuntu', serif;
+    font-weight: 400;
+    padding: 0% 0% 0% 20%;
+    display: block;
+}
+
+.header h2 {
+    letter-spacing: 4px;
+}
+
+.header a {
+    text-decoration: none;
+    color: teal;
+    letter-spacing: 5px;
+}
+
+.header p {
+    width: 500px;
+}

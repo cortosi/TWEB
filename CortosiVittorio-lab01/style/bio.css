@@ -1,0 +1,79 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    font-size: 11pt;
+    color: #404040;
+    font-family: "Georgia", "Garamond", serif;
+    background-image: url("../imgs/Background-bio.png");
+    background-attachment: fixed;
+}
+
+.page a {
+    color: #A4A400;
+}
+
+.page h2 {
+    text-decoration: underline;
+    color: #A4A400;
+    background-color: #F0F0F0;
+    font-family: "Lucida", "Sans Unicode", "Helvetica", "Arial", sans-serif;
+    font-size: 18pt;
+    letter-spacing: 0.25em;
+    display: inline-block;
+}
+
+.title {
+    display: block;
+    font-size: 22pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dati-personali h2 {
+    display: inline-block;
+    width: 13%;
+}
+
+.avatar-img {
+    width: 80%;
+    height: 240px;
+    display: inline-block;
+    text-align: right;
+}
+
+.avatar-img>.avatar {
+    width: 240px;
+    height: 240px;
+    background-image: url("../imgs/img_avatar.png");
+    display: inline-block;
+}
+
+.dati-personali>ul {
+    list-style-type: lower-roman;
+}
+
+.links a:nth-of-type(1) {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+.links a:nth-of-type(2) {
+    background-image: url("../imgs/valid-html5.png");
+}
+
+.links a:nth-of-type(3) {
+    background-image: url("../imgs/valid-css3.png");
+}
+
+.links a:nth-of-type(2),
+a:nth-of-type(3) {
+    background-size: cover;
+    height: 40px;
+    width: 110px;
+    display: block;
+}
