@@ -1,4 +1,5 @@
 <?php include "top.html"; ?>
+<?php include "common.php"; ?>
 <?php
 if ($_POST['name'] != null) {
     if (($result = checkName($_POST['name'])) == 0) {
@@ -19,36 +20,5 @@ if ($_POST['name'] != null) {
     }
 }
 
-//functions
-function checkName(string $name): int
-{
-    if ($name == null) {
-        return -1;
-    } else {
-        $file = fopen("./singles.txt", "r");
-        while (!feof($file)) {
-            $line = preg_split("/[,]/", fgets($file));
-            if ($line[0] == $name) {
-                fclose($file);
-                return 1;
-            }
-        }
-        fclose($file);
-        return 0;
-    }
-}
-
-function getInfo(string $username)
-{
-    $file = fopen("./singles.txt", "r");
-    while (!feof($file)) {
-        $line = preg_split("/[,]/", fgets($file));
-        if ($line[0] == $username) {
-            fclose($file);
-            return $line;
-        }
-    }
-    return NULL;
-}
 ?>
 <?php include "bottom.html"; ?>

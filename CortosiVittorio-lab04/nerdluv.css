@@ -105,3 +105,31 @@ ul li a img {
 #w3c {
 	clear: both;
 }
+
+/* Stili definiti da me */
+
+.match-info{
+	margin: 0 0;
+	padding: 0 0;
+	height: 150px;
+}
+
+.match-info p{
+	margin: 0 0;
+}
+
+.match-info-left, .match-info-right{
+	float: left;
+	width: 50%;
+}
+
+.match-info-left ul,
+.match-info-right ul{
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.content-wrapper{
+	display: table;
+  	margin: 0 auto;
+}

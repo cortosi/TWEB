@@ -1,7 +1,7 @@
 <?php include "top.html"; ?>
 <div class="content">
     <div class="form">
-        <form action="./matches-submit.php" method="POST">
+        <form action="./matches-submit.php" method="GET">
             <fieldset>
                 <legend>Returning User:</legend>
                 <div>
